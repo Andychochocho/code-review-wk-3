@@ -11,3 +11,7 @@ body {
 #result {
   display: none;
 }
+
+li {
+  list-style-type: none;
+}
