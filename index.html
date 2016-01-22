@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title> Ping-Pong Test!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -11,7 +11,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
-  <body>
-
+  <body class="container">
+    <div class="jumbotron">
+    <h1>Let's get started</h1>
+    </div>
+      <form id='pingPong'>
+        <div class="form-group">
+          <label for="pingPong">Pick any special number and we'll show all the numbers from one to your special number with a special surprise!</label>
+          <input type="number" class="form-control" id="userInput">
+        </div>
+        <button type="submit" class="btn btn-success">Submit here!</button>
+      </form>
+    <div id="result">
+    </div>
   </body>
 </html>
