@@ -1,7 +1,9 @@
+// Business logic
+
 function pingPong(number) {
-  var ping = "<li>ping</li>"
-  var pong = "<li>pong</li>"
-  var pongPing = "<li>pingpong</li>"
+  var ping = "ping"
+  var pong = "pong"
+  var pongPing = "pingpong"
   var numberThree = 3
   var numberFive = 5
   var arrayOutput = [];
@@ -14,16 +16,19 @@ function pingPong(number) {
     } else if (i % numberFive === 0) {
       arrayOutput.push(pong);
     } else {
-      arrayOutput.push('<li>'+i+'</li>');
+      arrayOutput.push(i);
     }
   }
   return arrayOutput;
   };
 
+// User-interface logic
+
 $(function() {
   $("form#pingPong").submit(function(event){
     var userInput = parseInt($("#userInput").val());
     var result = pingPong(userInput);
+    $('#result').empty();
     $('#result').append(result);
     $('#result').show();
     event.preventDefault();
