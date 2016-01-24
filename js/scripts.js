@@ -17,6 +17,7 @@ function pingPong(number) {
       arrayOutput.push(pong);
     } else {
       arrayOutput.push(i);
+      // arrayOutput.join(', ');
     }
   }
   return arrayOutput;
@@ -29,7 +30,7 @@ $(function() {
     var userInput = parseInt($("#userInput").val());
     var result = pingPong(userInput);
     $('#result').empty();
-    $('#result').append(result);
+    $('#result').append(result.join(", "));
     $('#result').show();
     event.preventDefault();
   });
